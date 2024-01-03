@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalculadoraCriptos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag 'style' %>
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' %>
+    <%= javascript_include_tag 'crypto' %>
+    <%= javascript_include_tag 'dataCrypto' %>
+ 
+  </head>
+  <body>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Criptomoneda</th>
+          <th>Precio</th>
+          <th>Calculo Anual en dolares</th>
+          <th>Calculo Anual en pesos</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr data-coin="BTC">
+          <td><img src="https://www.svgrepo.com/show/452169/bitcoin.svg" alt="BTC" width="25" height="25"/> BTC</td>
+          <td class="price-cell-BTC">0</td>  
+          <td class="estimate-cell-BTC">0</td>   
+          <td class="exchange-cell-BTC">0</td>   
+        </tr>
+        <tr data-coin="ETH">
+          <td><img src="https://www.svgrepo.com/show/366997/eth.svg" alt="ETH" width="25" height="25"/> ETH</td>
+          <td class="price-cell-ETH">0</td>  
+          <td class="estimate-cell-ETH">0</td>   
+          <td class="exchange-cell-ETH">0</td>   
+        </tr>
+        <tr data-coin="ADA">
+          <td><img src="https://www.svgrepo.com/show/303420/cardano-logo.svg" alt="ADA" width="25" height="25"/> ADA</td>
+          <td class="price-cell-ADA">0</td>  
+          <td class="estimate-cell-ADA">0</td> 
+          <td class="exchange-cell-ADA">0</td> 
+        </tr>
+ 
+      </tbody>
+    </table>
+    <div></div>
+ 
+    <button id="exportCsv">Exportar a CSV</button>
+    <button id="exportJson">Exportar a JSON</button>
+    <div id="current-time"></div>
+  </body>
+</html>

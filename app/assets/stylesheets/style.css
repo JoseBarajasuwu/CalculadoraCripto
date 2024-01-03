@@ -1,0 +1,75 @@
+/* app/assets/stylesheets/style.css */
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  table {
+    width: 40%;
+    border-collapse: collapse; /* Usar separación de bordes en lugar de collapse */
+    border-spacing: 0; /* Elimina el espacio entre las celdas */
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  tr:hover {
+    background-color: #f0f8ff;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+  .price-cell-BTC::before,
+  .estimate-cell-BTC::before,
+  .exchange-cell-BTC::before,
+  .price-cell-ETH::before,
+  .estimate-cell-ETH::before,
+  .exchange-cell-ETH::before,
+  .price-cell-ADA::before,
+  .estimate-cell-ADA::before,
+  .exchange-cell-ADA::before {
+    content: "$"; /* Agrega el símbolo de peso antes del contenido actual */
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  #current-time {
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 20px; /* Margen superior para separar de los botones */
+    color: #000000; /* Color del texto */
+  }
+
+  
